@@ -16,7 +16,7 @@ WORKDIR /usr/local/educative/angular
 
 ADD package.json ./package.json
 # Installing Angular cli and node modules in angular directory
-RUN npm i
+RUN cd /usr/local/educative/angular && npm i
 
 # Copying angular folder from local directory to Educative directory
 COPY . .
